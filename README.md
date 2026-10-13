@@ -1,4 +1,4 @@
-# RazorPay — responsive fintech website prototype
+# RazorPay Clone Website  — For Qskill Intership Project
 
 An independent frontend prototype for demonstrating payment and business-finance page concepts. This is **not the official Razorpay website**, is not affiliated with Razorpay, and does not provide any live payment service.
 
