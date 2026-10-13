@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RazorPay payments, payouts and business finance frontend prototype.">
+  <title>RazorPay — Payments, payouts & business finance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body data-auth-page="home">
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span>Introducing smarter payments for ambitious businesses</span>
+    <a href="#products">Explore what's new <span aria-hidden="true">↗</span></a>
+    <button class="announcement-close" aria-label="Dismiss announcement">×</button>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#" aria-label="RazorPay home"><img class="brand-logo" src="assets/razorpay-logo.png" alt="RazorPay"></a>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item has-menu">
+          <button class="nav-link menu-trigger" aria-expanded="false">Payments <span class="chevron">⌄</span></button>
+          <div class="mega-menu">
+            <div class="mega-intro"><span class="eyebrow">PAYMENTS</span><h3>Get paid, without the friction.</h3><p>Everything you need to accept payments wherever your customers are.</p><a class="text-link" href="#products">Explore payments <span>→</span></a></div>
+            <div class="mega-links">
+              <a href="payment-gateway.html"><span class="menu-icon">↗</span><span><b>Payment Gateway</b><small>Accept payments on web and app</small></span></a>
+              <a href="payment-links.html"><span class="menu-icon">⇄</span><span><b>Payment Links</b><small>Get paid with a shareable link</small></span></a>
+              <a href="payment-pages.html"><span class="menu-icon">▦</span><span><b>Payment Pages</b><small>Launch a checkout without code</small></span></a>
+              <a href="subscriptions.html"><span class="menu-icon">⌁</span><span><b>Subscriptions</b><small>Automate recurring collections</small></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item has-menu">
+          <button class="nav-link menu-trigger" aria-expanded="false">Business finance <span class="chevron">⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="business-finance.html"><b>Business finance</b><small>Stay on top of cash flow</small></a>
+            <a href="payouts.html"><b>Payouts</b><small>Explore outgoing payment workflows</small></a>
+            <a href="payroll.html"><b>Payroll workflows</b><small>Make payday simpler</small></a>
+          </div>
+        </div>
+        <a class="nav-link" href="#developers">Developers</a>
+        <a class="nav-link" href="#integrations">Integrations</a>
+        <a class="nav-link" href="#resources">Resources</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language-btn" aria-label="Select language">EN <span class="chevron">⌄</span></button>
+        <a class="btn btn-outline btn-small" href="login.html">Log in</a>
+        <a class="btn btn-primary btn-small" href="signup.html">Sign up <span>→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="pill"><span class="pill-spark">✦</span> THE FINANCE PLATFORM FOR GROWTH</div>
+        <h1>Payments that move<br><span>your business forward.</span></h1>
+        <p class="hero-lead">Accept payments, automate payouts and manage your money — all from one simple, powerful platform.</p>
+        <div class="hero-actions">
+          <a href="signup.html" class="btn btn-primary btn-large">Get started for free <span>→</span></a>
+          <a href="#products" class="btn btn-quiet btn-large">Explore products <span>↗</span></a>
+        </div>
+        <div class="hero-trust"><div class="avatar-stack"><span>AK</span><span>MS</span><span>RJ</span><span>+</span></div><div><strong>Built for businesses of every size</strong><small>From first sale to global scale</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a payments dashboard">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-chip chip-secure"><span class="chip-icon green">✓</span><span><b>Payment secured</b><small>Just now · #PF2841</small></span></div>
+        <div class="float-chip chip-transfer"><span class="transfer-icon">↗</span><span><b>Payout successful</b><small>₹ 24,850.00</small></span></div>
+        <div class="dashboard-card">
+          <div class="dash-top"><div><span class="dash-label">TOTAL BALANCE</span><div class="balance">₹ 8,42,680<span class="balance-decimal">.50</span></div></div><span class="status-pill"><i></i> Live</span></div>
+          <div class="dash-controls"><span>Overview <b>⌄</b></span><span>Last 30 days <b>⌄</b></span></div>
+          <div class="chart-area">
+            <div class="chart-y"><span>₹10L</span><span>₹7.5L</span><span>₹5L</span><span>₹2.5L</span><span>₹0</span></div>
+            <svg class="hero-chart" viewBox="0 0 420 160" role="img" aria-label="Upward payments chart">
+              <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#2d65f2" stop-opacity=".22"/><stop offset="100%" stop-color="#2d65f2" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 130 C25 122 28 108 53 115 S84 91 104 104 S138 82 158 91 S187 48 211 70 S247 57 268 66 S301 31 323 44 S358 18 378 30 S401 11 420 8 L420 160 L0 160Z" fill="url(#chartFill)"/>
+              <path d="M0 130 C25 122 28 108 53 115 S84 91 104 104 S138 82 158 91 S187 48 211 70 S247 57 268 66 S301 31 323 44 S358 18 378 30 S401 11 420 8" fill="none" stroke="#3168f5" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="323" cy="44" r="5" fill="#fff" stroke="#3168f5" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="chart-x"><span>01 Jun</span><span>08 Jun</span><span>15 Jun</span><span>22 Jun</span><span>30 Jun</span></div>
+          <div class="dash-bottom"><div><span class="metric-dot blue"></span><span>Payments received</span><b>₹ 6,42,210</b></div><div><span class="metric-dot mint"></span><span>Settlements</span><b>₹ 2,00,470</b></div></div>
+        </div>
+        <div class="payment-bubble"><span class="bubble-logo">UPI</span><span><b>Payment received</b><small>+ ₹ 2,499.00</small></span><span class="bubble-check">✓</span></div>
+        <div class="hero-decoration deco-one"></div><div class="hero-decoration deco-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <p>POWERING THE NEXT GENERATION OF BUSINESSES</p>
+      <div class="brand-row"><span class="client-word client-north">northstar</span><span class="client-word client-orbit">◉ orbit</span><span class="client-word client-kin">kinfolk</span><span class="client-word client-vertex">VERTEX</span><span class="client-word client-mono">mono<span>.</span></span><span class="client-word client-aster">✳ aster</span></div>
+    </section>
+
+    <section class="section section-products" id="products">
+      <div class="section-heading center-heading"><span class="eyebrow">ONE PLATFORM. MORE POSSIBILITIES.</span><h2>Everything your business needs<br>to <span>move money smarter.</span></h2><p>From your first online payment to complex financial workflows, build your next stage of growth here.</p></div>
+      <div class="product-tabs" role="tablist" aria-label="Product categories">
+        <button class="product-tab active" role="tab" aria-selected="true" data-category="payments">Accept payments</button>
+        <button class="product-tab" role="tab" aria-selected="false" data-category="payouts">Make payouts</button>
+        <button class="product-tab" role="tab" aria-selected="false" data-category="finance">Manage finance</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card product-featured"><div class="product-card-top"><span class="product-icon icon-blue">↗</span><span class="card-arrow">↗</span></div><h3>Payment Gateway</h3><p>Offer a smooth checkout experience with cards, UPI, wallets and more.</p><a href="payment-gateway.html" class="text-link">Explore gateway <span>→</span></a><div class="mini-checkout"><div class="mini-checkout-head"><span class="mini-brand">RazorPay</span><span>🔒 Secure</span></div><div class="mini-item"><div class="mini-product-art">✦</div><div><b>Everyday essentials</b><small>Order #1048</small></div><strong>₹1,499</strong></div><div class="mini-pay-row"><span>Pay with</span><b>UPI&nbsp;&nbsp; Cards&nbsp;&nbsp; Netbanking</b></div><div class="mini-pay-btn">Pay ₹1,499 <span>→</span></div></div></article>
+        <article class="product-card"><div class="product-card-top"><span class="product-icon icon-purple">⇄</span><span class="card-arrow">↗</span></div><h3>Payment Links</h3><p>Get paid anywhere with easy-to-share payment links. No website required.</p><a href="payment-links.html" class="text-link">Create a link <span>→</span></a><div class="link-preview"><span class="link-preview-icon">↗</span><div><small>PAYMENT LINK</small><b>razorpay.example/pay/coffee</b></div><button class="copy-demo" aria-label="Copy demo payment link">Copy</button></div></article>
+        <article class="product-card"><div class="product-card-top"><span class="product-icon icon-orange">▦</span><span class="card-arrow">↗</span></div><h3>Payment Pages</h3><p>Launch a beautiful branded payment page without writing code.</p><a href="payment-pages.html" class="text-link">Build your page <span>→</span></a><div class="page-preview"><div class="page-preview-top"><span>YOUR STORE</span><span>•••</span></div><div class="page-preview-art"><span>☼</span></div><div class="page-preview-lines"><i></i><i></i><i></i></div><div class="page-preview-button">Complete purchase</div></div></article>
+        <article class="product-card"><div class="product-card-top"><span class="product-icon icon-green">⌁</span><span class="card-arrow">↗</span></div><h3>Subscriptions</h3><p>Manage recurring payments and give customers a more flexible way to pay.</p><a href="subscriptions.html" class="text-link">Automate billing <span>→</span></a><div class="subscription-preview"><div class="sub-icon">↻</div><div><small>MONTHLY PLAN</small><b>Pro membership</b><span>₹999 / month</span></div><span class="sub-status">Active</span></div></article>
+        <article class="product-card"><div class="product-card-top"><span class="product-icon icon-pink">⌗</span><span class="card-arrow">↗</span></div><h3>QR & in-store payments</h3><p>Bring quick, convenient digital payments to your physical store.</p><a href="in-store-payments.html" class="text-link">Explore in-store <span>→</span></a><div class="qr-preview"><div class="fake-qr"><i></i><i></i><i></i><b></b></div><div><b>Scan to pay</b><small>Fast. Simple. Secure.</small></div></div></article>
+        <article class="product-card"><div class="product-card-top"><span class="product-icon icon-yellow">◎</span><span class="card-arrow">↗</span></div><h3>Payment analytics</h3><p>Understand transactions, spot trends and make decisions with clarity.</p><a href="business-finance.html" class="text-link">View insights <span>→</span></a><div class="analytics-preview"><div class="analytics-number"><small>SUCCESS RATE</small><b>98.6%</b><span>↑ 2.4% this month</span></div><div class="bar-chart"><i style="height:35%"></i><i style="height:54%"></i><i style="height:44%"></i><i style="height:70%"></i><i style="height:61%"></i><i style="height:88%"></i><i style="height:76%"></i><i style="height:100%"></i></div></div></article>
+      </div>
+      <div class="section-bottom-link"><a href="#get-started" class="btn btn-outline">Explore all products <span>→</span></a></div>
+    </section>
+
+    <section class="section finance-section" id="finance">
+      <div class="finance-visual">
+        <div class="finance-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>Business overview</span><span class="window-more">•••</span></div>
+          <div class="finance-welcome"><div><small>MONDAY, 24 JUNE</small><h3>Good morning, Alex 👋</h3></div><div class="finance-avatar">A</div></div>
+          <div class="finance-stat-grid"><div><small>Available balance</small><b>₹4,82,640<span>.00</span></b><em>↗ 12.8% this month</em></div><div><small>Outgoing payments</small><b>₹86,420<span>.00</span></b><em class="muted-em">Across 24 payouts</em></div></div>
+          <div class="finance-transactions"><div class="transaction-head"><b>Recent transactions</b><a href="dashboard.html">View all</a></div><div class="transaction"><span class="transaction-logo trans-green">↙</span><span><b>Northstar Studio</b><small>Payment received · Today</small></span><strong class="amount-positive">+₹12,500</strong></div><div class="transaction"><span class="transaction-logo trans-purple">↗</span><span><b>Cloud services</b><small>Subscription · Yesterday</small></span><strong>−₹2,499</strong></div><div class="transaction"><span class="transaction-logo trans-orange">↗</span><span><b>Team payroll</b><small>Bulk payout · 22 Jun</small></span><strong>−₹64,000</strong></div></div>
+        </div>
+        <div class="finance-float"><span>✓</span><div><b>All caught up!</b><small>Your payouts are on track</small></div></div>
+      </div>
+      <div class="finance-copy"><span class="eyebrow">YOUR MONEY, IN SYNC</span><h2>More control.<br><span>Less busywork.</span></h2><p>Keep collections, payouts and business finances connected. Spend less time juggling tools and more time building what comes next.</p><div class="feature-list"><div><span class="feature-check">✓</span><div><b>One clear view</b><p>Track balances and transactions from one dashboard.</p></div></div><div><span class="feature-check">✓</span><div><b>Faster workflows</b><p>Automate repetitive finance operations with confidence.</p></div></div><div><span class="feature-check">✓</span><div><b>Insights that help</b><p>See the activity that matters to your business.</p></div></div></div><a href="business-finance.html" class="btn btn-primary">Explore business finance <span>→</span></a></div>
+    </section>
+
+    <section class="stats-band">
+      <div class="stats-heading"><span class="eyebrow">BUILT FOR AMBITION</span><h2>Small beginnings.<br><span>Big possibilities.</span></h2></div>
+      <div class="stat"><b>99.9<span>%</span></b><p>Platform availability goal*</p></div>
+      <div class="stat"><b>100<span>+</span></b><p>Ways to build with APIs</p></div>
+      <div class="stat"><b>24<span>/7</span></b><p>Digital payment experiences</p></div>
+      <p class="stats-note">*Illustrative prototype metrics. Replace with verified business data before publishing.</p>
+    </section>
+
+    <section class="section industry-section" id="resources">
+      <div class="section-heading"><span class="eyebrow">MADE FOR YOUR NEXT CHAPTER</span><h2>One platform.<br><span>Every kind of business.</span></h2><p>Flexible building blocks for the way you sell, serve and grow.</p></div>
+      <div class="industry-grid">
+        <article class="industry-card industry-ecom"><div class="industry-illustration"><div class="shop-bag">P<span>✦</span></div><div class="floating-tag">Order paid <b>✓</b></div></div><div><span class="industry-kicker">01 / COMMERCE</span><h3>For e-commerce</h3><p>A checkout experience designed to help turn more visits into completed orders.</p><a href="payment-gateway.html" class="text-link">See commerce solutions <span>→</span></a></div></article>
+        <article class="industry-card industry-saas"><div class="industry-illustration"><div class="saas-window"><span>● ● ●</span><div class="saas-chart">↗</div><i></i><i></i></div><div class="floating-tag">Plan upgraded <b>✓</b></div></div><div><span class="industry-kicker">02 / SOFTWARE</span><h3>For SaaS & digital</h3><p>Manage recurring revenue, customer billing and payment insights in one place.</p><a href="subscriptions.html" class="text-link">See SaaS solutions <span>→</span></a></div></article>
+        <article class="industry-card industry-edu"><div class="industry-illustration"><div class="edu-cap">◆</div><div class="floating-tag">Fee received <b>✓</b></div></div><div><span class="industry-kicker">03 / EDUCATION</span><h3>For education</h3><p>Make fee collection and payment tracking simpler for your institution.</p><a href="payment-pages.html" class="text-link">See education solutions <span>→</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="developer-section" id="developers">
+      <div class="developer-copy"><span class="eyebrow eyebrow-light">BUILT FOR BUILDERS</span><h2>Powerful APIs.<br><span>Human-friendly docs.</span></h2><p>Build payment experiences your way with straightforward integration guides, clear examples and developer tools.</p><div class="developer-actions"><a href="#get-started" class="btn btn-white">Read the docs <span>↗</span></a><a href="#api-demo" class="dev-secondary">Explore API examples →</a></div><div class="dev-trust"><span>✓ Clear documentation</span><span>✓ Test-mode workflows</span><span>✓ Integration guides</span></div></div>
+      <div class="code-window" id="api-demo"><div class="code-title"><div class="window-dots"><i></i><i></i><i></i></div><span>create-payment.js</span><button id="copyCode" aria-label="Copy code example">Copy code</button></div><pre><code><span class="code-purple">const</span> payment = <span class="code-purple">await</span> razorpay.payments.<span class="code-blue">create</span>({
+  amount: <span class="code-orange">149900</span>,
+  currency: <span class="code-green">'INR'</span>,
+  description: <span class="code-green">'Order #1048'</span>,
+  customer: {
+    email: <span class="code-green">'customer@example.com'</span>
+  }
+});
+
+<span class="code-comment">// Handle the response securely</span>
+<span class="code-purple">if</span> (payment.status === <span class="code-green">'created'</span>) {
+  console.log(<span class="code-green">'Payment ready'</span>);
+}</code></pre><div class="code-bottom"><span><i></i> Example only · Not a live API</span><span>JavaScript</span></div></div>
+    </section>
+
+    <section class="section integrations-section" id="integrations">
+      <div class="section-heading center-heading"><span class="eyebrow">FITS YOUR WAY OF WORKING</span><h2>Connect the tools<br><span>you already use.</span></h2><p>Bring payment activity into your existing workflows with flexible integrations and developer-friendly building blocks.</p></div>
+      <div class="integration-grid">
+        <article class="integration-card"><span class="integration-icon integration-store">S</span><div><h3>Online stores</h3><p>Connect checkout to a storefront and keep order activity together.</p></div><span class="integration-arrow" aria-hidden="true">↗</span></article>
+        <article class="integration-card"><span class="integration-icon integration-books">▤</span><div><h3>Accounting tools</h3><p>Make transaction exports and reconciliation part of your routine.</p></div><span class="integration-arrow" aria-hidden="true">↗</span></article>
+        <article class="integration-card"><span class="integration-icon integration-work">⌘</span><div><h3>Team workflows</h3><p>Route payment updates to the people who need to take action.</p></div><span class="integration-arrow" aria-hidden="true">↗</span></article>
+        <article class="integration-card"><span class="integration-icon integration-api">{ }</span><div><h3>Your own platform</h3><p>Use clear API concepts to shape a payment experience around your product.</p></div><span class="integration-arrow" aria-hidden="true">↗</span></article>
+      </div>
+      <p class="integration-note">Integration tiles are illustrative concepts, not a list of live or certified integrations.</p>
+    </section>
+
+    <section class="section security-section" id="security">
+      <div class="security-panel">
+        <div class="security-copy"><span class="eyebrow eyebrow-light">DESIGNED WITH CARE</span><h2>Clarity and control<br><span>at every step.</span></h2><p>Good finance workflows make it easier to understand what happened, who can act and what needs attention. Explore these interface concepts in the demo.</p><a class="btn btn-white" href="#get-started">Explore the platform <span>→</span></a></div>
+        <div class="security-points">
+          <article><span>✓</span><div><b>Thoughtful access</b><p>Separate roles and approvals in the right team workflow.</p></div></article>
+          <article><span>⌕</span><div><b>Useful activity trails</b><p>Keep key transaction and payout updates easy to review.</p></div></article>
+          <article><span>↔</span><div><b>Reconciliation in view</b><p>Make matching activity part of a calmer close-of-day process.</p></div></article>
+        </div>
+        <small class="security-disclaimer">Concept UI only. This prototype does not provide security controls or process payments.</small>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="section-heading center-heading"><span class="eyebrow">A CLEAR PLACE TO START</span><h2>Find the right fit<br><span>for your next stage.</span></h2><p>Explore sample plans for different operating needs. These tiers are illustrative and do not represent live pricing.</p></div>
+      <div class="pricing-grid">
+        <article class="pricing-card"><span class="pricing-kicker">STARTING OUT</span><h3>Essentials</h3><p>For small teams setting up their first digital payment workflows.</p><ul><li>Core payment experiences</li><li>Simple activity overview</li><li>Self-serve product guides</li></ul><a href="signup.html" class="text-link">Explore Essentials <span>→</span></a></article>
+        <article class="pricing-card pricing-highlight"><span class="pricing-kicker">GROWING TEAMS</span><h3>Growth</h3><p>For businesses connecting collections, payouts and daily operations.</p><ul><li>Flexible payment tools</li><li>Team workflow concepts</li><li>Expanded reporting views</li></ul><a href="signup.html" class="text-link">Explore Growth <span>→</span></a></article>
+        <article class="pricing-card"><span class="pricing-kicker">COMPLEX NEEDS</span><h3>Custom</h3><p>For teams exploring tailored workflows and integration requirements.</p><ul><li>Integration planning</li><li>Configurable processes</li><li>Guidance for your use case</li></ul><a href="mailto:hello@example.com" class="text-link">Talk through your needs <span>→</span></a></article>
+      </div>
+      <p class="pricing-note">No live products, contracts or pricing are offered through this prototype.</p>
+    </section>
+
+    <section class="section testimonial-section">
+      <div class="testimonial-heading"><span class="eyebrow">THE PEOPLE BUILDING WHAT'S NEXT</span><h2>Good things happen<br>when payments <span>just work.</span></h2><div class="testimonial-controls"><button id="testimonialPrev" aria-label="Previous testimonial">←</button><button id="testimonialNext" aria-label="Next testimonial">→</button></div></div>
+      <div class="testimonial-card" aria-live="polite"><div class="quote-mark">“</div><blockquote id="quoteText">We needed a payment experience that felt like a natural part of our product. Having the key pieces in one place made our workflow much simpler.</blockquote><div class="quote-person"><div class="quote-avatar" id="quoteAvatar">RM</div><div><b id="quoteName">Riya Mehta</b><small id="quoteRole">Founder, Northstar Studio</small></div><span class="quote-company" id="quoteCompany">northstar</span></div><div class="quote-pagination"><span class="quote-current" id="quoteCurrent">01</span><span class="quote-line"><i id="quoteProgress"></i></span><span>03</span></div><p class="prototype-note">Sample testimonial for layout demonstration.</p></div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading"><span class="eyebrow">A FEW QUICK ANSWERS</span><h2>Good to know<br><span>before you begin.</span></h2><p>Some practical notes about this RazorPay demonstration.</p></div>
+      <div class="faq-list">
+        <details><summary>Can I use this site to accept a real payment?<span aria-hidden="true">+</span></summary><p>No. RazorPay here is a frontend prototype. It does not connect to a payment processor, collect payment details or move money.</p></details>
+        <details><summary>Are the product metrics, customer names and quotes real?<span aria-hidden="true">+</span></summary><p>No. Dashboard figures, logos, testimonials and examples are fictional placeholders made for the interface demonstration.</p></details>
+        <details><summary>How can I explore the account flow?<span aria-hidden="true">+</span></summary><p>Create a demo account from the sign-up page to preview the sample dashboard. Demo credentials are stored in this browser only; do not use a real password.</p></details>
+        <details><summary>Does RazorPay offer live integrations or pricing?<span aria-hidden="true">+</span></summary><p>No. Integration tiles and plan descriptions are illustrative product concepts, not offers or statements of live availability.</p></details>
+      </div>
+    </section>
+
+    <section class="cta-section" id="get-started"><div class="cta-orb cta-orb-one"></div><div class="cta-orb cta-orb-two"></div><div class="cta-content"><span class="eyebrow eyebrow-light">YOUR NEXT CHAPTER STARTS HERE</span><h2>Ready to make money<br><span>move better?</span></h2><p>Bring your payments and finance workflows together with a platform designed to grow with you.</p><div class="cta-actions"><a href="signup.html" class="btn btn-white btn-large">Create your account <span>→</span></a><a href="#products" class="cta-link">Explore the platform <span>↗</span></a></div><small>No commitment. Just a conversation about your goals.</small></div></section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-main"><div class="footer-brand-col"><a class="brand brand-footer" href="#" aria-label="RazorPay home"><img class="brand-logo" src="assets/razorpay-logo.png" alt="RazorPay"></a><p>An independent fintech website prototype demonstrating payment and business-finance concepts.</p><div class="social-links"><a href="#footer" aria-label="LinkedIn">in</a><a href="#footer" aria-label="X">𝕏</a><a href="#footer" aria-label="GitHub">⌘</a></div></div>          <div class="footer-col"><b>Products</b><a href="payment-gateway.html">Payment Gateway</a><a href="payment-links.html">Payment Links</a><a href="payment-pages.html">Payment Pages</a><a href="subscriptions.html">Subscriptions</a><a href="in-store-payments.html">In-store payments</a></div>
+    <div class="footer-col"><b>Solutions</b><a href="#resources">E-commerce</a><a href="#resources">SaaS & digital</a><a href="#resources">Education</a><a href="business-finance.html">Business finance</a><a href="payouts.html">Payouts</a><a href="payroll.html">Payroll workflows</a></div>
+      <div class="footer-col"><b>Resources</b><a href="#developers">Documentation</a><a href="#resources">Guides</a><a href="#resources">Customer stories</a><a href="#faq">FAQs</a><a href="mailto:hello@example.com">Contact</a></div>
+      <div class="footer-newsletter"><b>Get product updates</b><p>Occasional notes on payments, product improvements and new ideas.</p><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="you@company.com" required><button aria-label="Subscribe to updates" type="submit">→</button></form><small id="newsletterMessage">No spam. Unsubscribe whenever you like.</small></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 RazorPay Prototype. All rights reserved.</span><div><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#security">Security concepts</a></div><span class="prototype-disclaimer">Independent demo · Not affiliated with Razorpay</span></div>
+  </footer>
+
+  <div class="product-modal-backdrop" id="productModal" hidden>
+    <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="product-modal-close" id="closeProductModal" aria-label="Close product details">×</button>
+      <span class="eyebrow">PRODUCT OVERVIEW</span>
+      <h2 id="productModalTitle">Product</h2>
+      <p id="productModalDescription"></p>
+      <div class="product-modal-features" id="productModalFeatures"></div>
+      <div class="product-modal-actions"><a href="signup.html" class="btn btn-primary">Get started <span>→</span></a><button type="button" class="btn btn-outline" id="productModalBack">Keep exploring</button></div>
+      <small>Prototype information only. No real payments are processed.</small>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+</body>
+</html>

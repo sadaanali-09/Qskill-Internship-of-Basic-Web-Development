@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sample RazorPay demo dashboard.">
+  <title>Dashboard — RazorPay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css"><script src="auth.js" defer></script>
+</head>
+<body class="auth-page dashboard-page" data-auth-page="dashboard">
+  <div class="dash-app">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html" aria-label="RazorPay home"><img class="brand-logo" src="assets/razorpay-logo-white.png" alt="RazorPay"></a>
+      <div class="dash-nav-label">WORKSPACE</div>
+      <nav class="dash-nav" aria-label="Dashboard navigation">
+        <a class="active" href="dashboard.html"><span>▦</span> Overview</a>
+        <a href="index.html#products"><span>↗</span> Payments</a>
+        <a href="index.html#finance"><span>⇄</span> Payouts & finance</a>
+        <a href="index.html#developers"><span>⌘</span> Developers</a>
+        <a href="index.html#resources"><span>▤</span> Resources</a>
+      </nav>
+      <div class="dash-sidebar-bottom">Demo workspace<br><span id="businessLabel">Personal workspace</span><br><br>Sample values only. No real funds are shown.</div>
+    </aside>
+    <main class="dash-main">
+      <div class="dash-topline"><span class="crumb">Workspace / Overview</span><div class="dash-account"><span id="profileName">Demo User</span><span class="quote-avatar" id="profileInitial">D</span><button class="dash-signout" id="logoutButton">Log out</button></div></div>
+      <div class="dash-intro"><div><h1>Good to see you, <span id="dashboardName">there</span> 👋</h1><p>Here's a sample overview of your business activity.</p><div class="dash-label-demo">DEMO DASHBOARD · ILLUSTRATIVE DATA ONLY</div></div><button class="btn btn-primary" id="dashboardExplore">Explore products <span>→</span></button></div>
+      <section class="dash-metrics" aria-label="Sample dashboard metrics">
+        <article class="dash-metric"><div class="dash-metric-head"><span>Sample balance</span><span class="dash-metric-icon">₹</span></div><strong>₹4,82,640</strong><small class="dash-green">↑ 12.8% · illustrative trend</small></article>
+        <article class="dash-metric"><div class="dash-metric-head"><span>Payments this month</span><span class="dash-metric-icon">↗</span></div><strong>1,284</strong><small>Sample transaction count</small></article>
+        <article class="dash-metric"><div class="dash-metric-head"><span>Sample success rate</span><span class="dash-metric-icon">✓</span></div><strong>98.6%</strong><small class="dash-green">Example metric—not live</small></article>
+      </section>
+      <div class="dash-content-grid">
+        <section class="dash-panel"><div class="dash-panel-head"><h2>Payments overview</h2><span>Last 7 months · demo</span></div><div class="dash-bars" role="img" aria-label="Illustrative bar chart of payment activity"><i style="height:35%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:68%"></i><i style="height:59%"></i><i style="height:78%"></i><i style="height:91%"></i><i style="height:73%"></i><i style="height:100%"></i><i style="height:84%"></i></div><div class="dash-months"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div><div class="dash-actions"><button class="btn btn-outline" id="dashboardTestAction">Run demo action</button><a class="btn btn-primary" href="index.html#products">View products <span>→</span></a></div><p class="dash-notice" id="dashboardNotice">Sample dashboard only. Values are illustrative and are not connected to banks, payment processors or live transactions.</p></section>
+        <section class="dash-panel"><div class="dash-panel-head"><h2>Recent activity</h2><span>Sample entries</span></div><div class="dash-activity"><div class="dash-activity-row"><span class="transaction-logo trans-green">↙</span><div><b>Northstar Studio</b><small>Payment received · Today</small></div><strong class="dash-green">+₹12,500</strong></div><div class="dash-activity-row"><span class="transaction-logo trans-purple">↗</span><div><b>Cloud services</b><small>Subscription · Yesterday</small></div><strong>−₹2,499</strong></div><div class="dash-activity-row"><span class="transaction-logo trans-orange">↗</span><div><b>Team payout</b><small>Transfer · 22 Jun</small></div><strong>−₹64,000</strong></div><div class="dash-activity-row"><span class="transaction-logo trans-green">↙</span><div><b>Order #1048</b><small>Payment received · 20 Jun</small></div><strong class="dash-green">+₹1,499</strong></div></div><p class="dash-notice">The activity list is sample content for testing the dashboard layout.</p></section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

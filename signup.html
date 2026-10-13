@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a RazorPay frontend demo account.">
+  <title>Create your account — RazorPay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css"><script src="auth.js" defer></script>
+</head>
+<body class="auth-page" data-auth-page="signup">
+  <header class="auth-topbar"><a class="brand" href="index.html" aria-label="RazorPay home"><img class="brand-logo" src="assets/razorpay-logo.png" alt="RazorPay"></a><span>Already registered? <a href="login.html">Log in</a></span></header>
+  <main class="auth-shell">
+    <section class="auth-promo" aria-label="RazorPay demo benefits">
+      <div><span class="auth-kicker">START BUILDING</span><h1>One account.<br><span>More room to grow.</span></h1><p>Explore payment product concepts and a business dashboard in this polished, responsive frontend prototype.</p>
+        <div class="auth-benefits"><div class="auth-benefit"><i>✓</i><span>Simple demo onboarding</span></div><div class="auth-benefit"><i>↗</i><span>Interactive product experiences</span></div><div class="auth-benefit"><i>▦</i><span>A sample dashboard after sign-up</span></div></div>
+      </div><div class="auth-promo-foot">No card required for this frontend demo</div>
+    </section>
+    <section class="auth-card">
+      <h2>Create your account</h2><p class="auth-subtitle">Set up a demo profile to explore the RazorPay sample dashboard.</p>
+      <div id="authMessage" class="auth-error" role="alert" aria-live="polite"></div>
+      <form class="auth-form" id="authForm" novalidate>
+        <div class="auth-field"><label for="fullName">Full name</label><input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Your full name" maxlength="80" required></div>
+        <div class="auth-field"><label for="businessName">Business name <span style="font-weight:400;color:#929bad">(optional)</span></label><input type="text" id="businessName" name="businessName" autocomplete="organization" placeholder="Company or project name" maxlength="100"></div>
+        <div class="auth-field"><label for="email">Work email</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" maxlength="254" required></div>
+        <div class="auth-field"><label for="password">Create password</label><div class="auth-password"><input type="password" id="password" name="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button type="button" class="toggle-password" data-toggle-password="password" aria-pressed="false">Show</button></div><div class="password-meter" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><small id="passwordStrength" style="font-size:9px;color:#929bad">Use at least 8 characters</small></div>
+        <div class="auth-field"><label for="confirmPassword">Confirm password</label><div class="auth-password"><input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" placeholder="Enter the password again" required><button type="button" class="toggle-password" data-toggle-password="confirmPassword" aria-pressed="false">Show</button></div></div>
+        <label class="auth-check" style="font-size:9px;color:#7c8799"><input type="checkbox" id="acceptTerms" required><span>I understand this is a frontend demo and I won't enter real payment or banking details.</span></label>
+        <button class="auth-submit" type="submit">Create account <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="auth-demo-note">For prototype use only: profile data is stored in this browser. Passwords are hashed locally for demonstration, but this is not production authentication and does not replace a secure backend.</div>
+      <p class="auth-switch">Already have a demo account? <a href="login.html">Log in</a></p>
+      <a class="auth-back" href="index.html">← Back to home</a>
+    </section>
+  </main>
+</body>
+</html>

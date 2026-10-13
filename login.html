@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to the RazorPay frontend demo.">
+  <title>Log in — RazorPay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css"><script src="auth.js" defer></script>
+</head>
+<body class="auth-page" data-auth-page="login">
+  <header class="auth-topbar"><a class="brand" href="index.html" aria-label="RazorPay home"><img class="brand-logo" src="assets/razorpay-logo.png" alt="RazorPay"></a><span>New to RazorPay? <a href="signup.html">Create an account</a></span></header>
+  <main class="auth-shell">
+    <section class="auth-promo" aria-label="RazorPay demo benefits">
+      <div><span class="auth-kicker">YOUR BUSINESS, IN MOTION</span><h1>Welcome back to<br><span>smarter payments.</span></h1><p>Manage payment experiences, explore finance tools and get a clearer view of your business activity.</p>
+        <div class="auth-benefits"><div class="auth-benefit"><i>↗</i><span>One view for payment activity</span></div><div class="auth-benefit"><i>⌁</i><span>Helpful insights and workflows</span></div><div class="auth-benefit"><i>▦</i><span>Tools designed to grow with you</span></div></div>
+      </div><div class="auth-promo-foot">Independent frontend demo · No real payment processing</div>
+    </section>
+    <section class="auth-card">
+      <h2>Log in to RazorPay</h2><p class="auth-subtitle">Enter the details associated with your demo account.</p>
+      <div id="authMessage" class="auth-error" role="alert" aria-live="polite"></div>
+      <form class="auth-form" id="authForm" novalidate>
+        <div class="auth-field"><label for="email">Work email</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required></div>
+        <div class="auth-field"><label for="password">Password</label><div class="auth-password"><input type="password" id="password" name="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" class="toggle-password" data-toggle-password="password" aria-pressed="false">Show</button></div></div>
+        <div class="auth-row"><label class="auth-check"><input type="checkbox" id="rememberMe"> Keep me logged in on this browser</label><button type="button" class="auth-inline-link" id="forgotPassword">Forgot password?</button></div>
+        <button class="auth-submit" type="submit">Log in <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="auth-divider">DEMO ACCOUNT ACCESS</div>
+      <div class="auth-demo-note">Create a demo account first from the sign-up page. Your demo account stays in this browser only; it is not connected to a server or real financial data.</div>
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up for free</a></p>
+      <a class="auth-back" href="index.html">← Back to home</a>
+      <p class="auth-legal">This prototype is not affiliated with Razorpay. Do not enter real financial credentials.</p>
+    </section>
+  </main>
+</body>
+</html>
